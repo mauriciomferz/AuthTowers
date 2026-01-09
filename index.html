@@ -76,6 +76,12 @@
           animation: dash-scroll 1s linear infinite;
         }
 
+        @keyframes beam-pulse {
+          0%, 100% { opacity: 0.3; filter: brightness(1) hue-rotate(0deg); }
+          50% { opacity: 0.9; filter: brightness(1.8) hue-rotate(25deg); }
+        }
+        .animate-beam-pulse { animation: beam-pulse 3s infinite ease-in-out; }
+
         @keyframes grid-pulse {
           0%, 100% { opacity: 0.1; }
           50% { opacity: 0.25; }

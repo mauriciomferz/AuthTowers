@@ -15,6 +15,7 @@ export interface TowerData {
   useCase: string;
   detailedScenario: string;
   performanceMetrics: string[];
+  keyDifferentiators: string[];
   colorClass: string;
   accentColor: string;
   icon: React.ReactNode;

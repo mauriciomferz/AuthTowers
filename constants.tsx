@@ -16,6 +16,11 @@ export const TOWERS: TowerData[] = [
       'Global Read Consistency via Zookies',
       'Scales to Billions of Tuples'
     ],
+    keyDifferentiators: [
+      'Zanzibar-based graph traversal for planetary-scale relationships.',
+      'Causal consistency using Zookies to eliminate stale-read errors.',
+      'Distributed relationship tuples decoupled from core app databases.'
+    ],
     colorClass: 'purple',
     accentColor: '#A855F7',
     icon: <Network className="w-8 h-8 text-purple-400" />,
@@ -35,6 +40,11 @@ export const TOWERS: TowerData[] = [
       'O(1) policy evaluation complexity',
       'Push-down database filtering (SQL/NoSQL)'
     ],
+    keyDifferentiators: [
+      'Polar logic engine for declarative, complex ABAC policies.',
+      'Native SQL/NoSQL push-down filtering to prevent N+1 issues.',
+      'Unified policy source for both access checks and list-filtering.'
+    ],
     colorClass: 'cyan',
     accentColor: '#06B6D4',
     icon: <Cpu className="w-8 h-8 text-cyan-400" />,
@@ -45,14 +55,19 @@ export const TOWERS: TowerData[] = [
     id: TowerType.GAUTH_GO,
     title: 'Gauth_go',
     label: 'AGENCY',
-    description: "A pioneer in fiduciary-based authorization, Gauth_go represents a radical paradigm shift by encoding legal liability and power-of-attorney directly into the system's core authentication and authorization flows. It transcends simple binary permissions to focus on the 'Legal Agency' of actors, ensuring every delegated action is anchored by a verifiable, cryptographically-signed audit trail on an immutable fiduciary ledger. Imagine a real-world scenario where a patient in a high-stakes clinical environment delegates 'Limited Medical Proxy' to a trauma specialist. Gauth_go doesn't just grant a temporary token; it issues a digital 'Warrant of Agency' that is continuously validated against the patient's fiduciary ledger. This warrant specifies that the specialist may access encrypted genomic records and psychiatric history exclusively for the duration of a medical emergency. If the specialist attempts to exceed this pre-defined scope—for instance, by attempting to export sensitive biometric telemetry to an external research database—the fiduciary engine doesn't just block the process; it seals the transaction state and generates a 'Forensic Liability Proof' anchored by Hardware Security Modules (HSMs). This proof serves as a legally admissible record of a breach of fiduciary duty, allowing healthcare providers and patients to resolve disputes with absolute cryptographic certainty. By transforming digital identity into a legally recognized representative capacity, Gauth_go allows organizations to manage complex signatory rights, medical proxy delegations, and cross-border AI agency with the same rigor as physical legal contracts, effectively bridging the gap between digital authorization and real-world forensic accountability.",
+    description: "A pioneer in fiduciary-based authorization, Gauth_go represents a radical paradigm shift by encoding legal liability and power-of-attorney directly into the system's core flows. It transcends binary permissions to focus on 'Legal Agency,' ensuring every delegated action is anchored by a verifiable audit trail on an immutable fiduciary ledger. In high-stakes healthcare, Gauth_go transforms a simple 'view records' permission into a machine-readable 'Mandate of Disclosure.' When a patient delegates access to their sensitive longitudinal medical records to a specialist, the fiduciary ledger records a time-bound, cryptographically-signed mandate. Every data request is subsequently matched against this mandate's specific representative capacity. If the specialist attempts to exceed this scope—for instance, by exporting biometric telemetry to an external database—the fiduciary engine doesn't just block the request; it seals the transaction state and generates a 'Forensic Liability Proof' anchored by Hardware Security Modules (HSMs). This proof serves as a legally admissible record of a breach of fiduciary duty, providing a bridge between digital events and real-world forensic accountability, ensuring absolute non-repudiation in the most sensitive architectural meshes.",
     architecture: 'Fiduciary duty ledger, cryptographically signed agency proofs, legal-tech integration, forensic audit logs.',
-    useCase: 'Trust management, AI agent delegation, legal document signing, and high-stakes fiduciary actions.',
-    detailedScenario: "Scenario: A patient in London delegates 'Diagnostic Agency' to a specialist in Tokyo via Gauth_go. The fiduciary ledger records a time-bound, cryptographically-signed mandate limited to viewing MRI data for 72 hours. When the specialist attempts to trigger an 'Export' command for the patient's entire psychiatric history, Gauth_go's fiduciary layer identifies the mismatch between the specialist's current 'Representative Capacity' and the requested action. It blocks the export, logs a 'High-Severity Fiduciary Breach' on the ledger, and notifies the patient's legal proxy with a tamper-proof evidence chain, ensuring full forensic accountability.",
+    useCase: 'Healthcare data proxy, AI agent delegation, corporate signatory rights, and trust management.',
+    detailedScenario: "A patient in London delegates 'Diagnostic Agency' to a Tokyo specialist via Gauth_go. The fiduciary ledger records a 72-hour mandate limited to MRI telemetry. When the specialist attempts to trigger an 'Export' for psychiatric history, Gauth_go identifies the mismatch between the 'Representative Capacity' and the action. It blocks the export, logs a 'High-Severity Fiduciary Breach' on the immutable ledger, and notifies the patient's legal proxy with a tamper-proof evidence chain.",
     performanceMetrics: [
       'Hardware security module (HSM) signing',
       '100% verifiable non-repudiation',
       'Real-time liability validation'
+    ],
+    keyDifferentiators: [
+      'Fiduciary duty anchored to a cryptographically signed immutable ledger.',
+      'Forensic Liability Proofs backed by Hardware Security Modules (HSMs).',
+      'Digital Warrants of Agency representing legal representative capacity.'
     ],
     colorClass: 'emerald',
     accentColor: '#10B981',
@@ -69,3 +84,45 @@ export const RADAR_DATA = [
   { subject: 'Developer Velocity', A: 75, B: 90, C: 65, D: 88, fullMark: 100 },
   { subject: 'Performance', A: 98, B: 85, C: 70, D: 85, fullMark: 100 },
 ];
+
+export const COMPARISON_DATA = {
+  headers: ['Core Vector', 'OpenFGA (ReBAC)', 'Oso (ABAC/Logic)', 'Gauth_go (Agency)'],
+  rows: [
+    {
+      category: 'Primary Architecture',
+      a: 'Zanzibar Graph / Tuples',
+      b: 'Polar Logic / Policies',
+      c: 'Fiduciary Ledger / Ledger'
+    },
+    {
+      category: 'Data Granularity',
+      a: 'Extremely Fine-Grained (Billions)',
+      b: 'Attribute-Driven (Deep Logic)',
+      c: 'Transactional / Legal Entity'
+    },
+    {
+      category: 'Core Feature',
+      a: 'Recursive Relationship Checks',
+      b: 'Declarative Data Filtering',
+      c: 'Forensic Fiduciary Proofs'
+    },
+    {
+      category: 'Performance Class',
+      a: 'Planetary-Scale, < 5ms reads',
+      b: 'Local eval, sub-ms filtering',
+      c: 'High-Stakes, Ledger-dependent'
+    },
+    {
+      category: 'Key Pro',
+      a: 'Near-infinite scale for complex graphs',
+      b: 'Extreme developer velocity via Polar',
+      c: 'Absolute legal non-repudiation'
+    },
+    {
+      category: 'Key Con',
+      a: 'Tuple management overhead',
+      b: 'Custom logic engine learning curve',
+      c: 'Operational latency / HSM cost'
+    }
+  ]
+};
